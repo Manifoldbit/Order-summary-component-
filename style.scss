@@ -6,9 +6,19 @@
   body {
     font-family: 'Red Hat Display',
       sans-serif;
-      
-      height: 100vh;
+
+    height: 100vh;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .container {
@@ -68,7 +78,7 @@
   text-align: center;
   gap: 4vw;
 
-  &__plan h5 {
+  &__plan h2 {
     font-weight: bolder;
     font-size: 1.2rem;
   }
@@ -136,13 +146,15 @@ img {
   color: #717Fa6;
   font-weight: bolder;
 }
-footer{
+
+footer {
   // background-color: red;
   height: 8vh;
   display: grid;
   place-content: center;
   font-size: .8rem;
 }
+
 @media(min-width:500px) {
   .container {
     height: 100vh;
@@ -154,6 +166,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 25%;
+    gap: 1vh;
 
     &__image {
       height: 17vh;
@@ -162,6 +175,10 @@ footer{
     &__summary {
       // background-color: red;
       margin-top: 70px;
+    }
+
+    &__summary h1 {
+      font-size: 1.5rem;
     }
 
     &__summary__info {
@@ -178,9 +195,9 @@ footer{
       width: 40vw;
     }
 
-    &__plan h5 {
+    &__plan h2 {
       font-size: .9rem;
-      
+
     }
 
     &__plan__year {

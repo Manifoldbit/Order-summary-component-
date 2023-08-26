@@ -8,6 +8,16 @@
   height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -55,7 +65,7 @@
   text-align: center;
   gap: 4vw;
 }
-.annual__plan h5 {
+.annual__plan h2 {
   font-weight: bolder;
   font-size: 1.2rem;
 }
@@ -133,12 +143,16 @@ footer {
     display: flex;
     flex-direction: column;
     width: 25%;
+    gap: 1vh;
   }
   .order__image {
     height: 17vh;
   }
   .order__summary {
     margin-top: 70px;
+  }
+  .order__summary h1 {
+    font-size: 1.5rem;
   }
   .order__summary__info {
     font-size: 1rem;
@@ -150,7 +164,7 @@ footer {
     height: 6vh;
     width: 40vw;
   }
-  .annual__plan h5 {
+  .annual__plan h2 {
     font-size: 0.9rem;
   }
   .annual__plan__year {
