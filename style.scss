@@ -29,12 +29,15 @@ p {
   align-items: center;
   background-color: hsl(225, 100%, 94%);
 }
-
+.summary{
+ min-width: 500px;
+}
 .order {
   height: 70%;
   background-color: #fff;
   width: 90%;
   border-radius: 1.5rem;
+  min-width: 500px;
 
   &__image {
     width: 100%;
