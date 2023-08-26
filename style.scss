@@ -45,14 +45,11 @@ p {
   width: 100%;
   height: 22vh;
   justify-content: center;
-  // background-color: green;
 
-  // background-color: red;
  }
 
  &__summary {
   height: 8vh;
-  // background-color:red;
   display: grid;
 
   place-items: center;
@@ -60,7 +57,6 @@ p {
 
  &__summary__info {
   height: 10vh;
-  // background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +102,6 @@ p {
 
 .payment {
  height: 7vh;
- // background-color: yellow;
  display: grid;
  place-items: center;
  margin: 1rem 0 0 0;
@@ -114,7 +109,6 @@ p {
 
 .cancel__order {
  height: 7vh;
- // background-color: blue;
  display: grid;
  place-items: center;
 
@@ -153,7 +147,6 @@ img {
 }
 
 footer {
- // background-color: red;
  height: 8vh;
  display: grid;
  place-content: center;
@@ -163,7 +156,6 @@ footer {
 @media(min-width:500px) {
  .container {
   height: 100vh;
-  // background-color: red;
  }
 
  .order {
@@ -178,7 +170,6 @@ footer {
   }
 
   &__summary {
-   // background-color: red;
    margin-top: 70px;
   }
 
@@ -187,7 +178,6 @@ footer {
   }
 
   &__summary__info {
-   // background-color: green;
    font-size: 1rem;
   }
  }
