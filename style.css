@@ -28,7 +28,7 @@ p {
 }
 
 .summary {
-  min-width: 500px;
+  min-width: 300px;
 }
 
 .order {
@@ -36,7 +36,7 @@ p {
   background-color: #fff;
   width: 90%;
   border-radius: 1.5rem;
-  min-width: 500px;
+  min-width: 300px;
 }
 .order__image {
   width: 100%;
