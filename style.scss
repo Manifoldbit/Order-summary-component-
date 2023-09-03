@@ -1,12 +1,10 @@
 * {
  margin: 0;
  padding: 0;
- block-size: border-box;
+ box-sizing: border-box;
 
  body {
-  font-family: 'Red Hat Display',
-   sans-serif;
-
+  font-family: 'Red Hat Display' sans-serif;
   height: 100vh;
  }
 }
@@ -21,8 +19,14 @@ p {
  margin: 0;
 }
 
+
+.hero {
+ width: 100%;
+ border-radius: 1.5rem 1.5rem 0 0;
+}
+
 .container {
- height: 100vh;
+ min-height: 100vh;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -30,74 +34,49 @@ p {
  background-color: hsl(225, 100%, 94%);
 }
 
-.summary {
- min-width: 300px;
-}
-
 .order {
- height: 70%;
  background-color: #fff;
- width: 90%;
  border-radius: 1.5rem;
- min-width: 300px;
-
- &__image {
-  width: 100%;
-  height: 22vh;
-  justify-content: center;
-
- }
-
- &__summary {
-  height: 8vh;
-  display: grid;
-
-  place-items: center;
- }
-
- &__summary__info {
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 5vw;
-  text-align: center;
-  padding: 0 1rem 1rem 1rem;
- }
+ display: grid;
+ place-items: center;
+ text-align: center;
 
 }
 
 .annual {
- height: 10vh;
  background-color: #F7F9FF;
  border-radius: .936rem;
- margin: 0 5%;
  display: flex;
- justify-content: space-evenly;
+ flex-direction: row;
+ justify-content: space-between;
  align-items: center;
  text-align: center;
  gap: 4vw;
+ width: 90%;
 
  &__plan h2 {
   font-weight: bolder;
   font-size: 1.2rem;
  }
 
- &__plan__year {
+ &__plan p {
   font-size: 1rem;
   color: #717Fa6;
-  ;
  }
+}
 
- &__music__icon {
-  height: 6vh;
-  width: 15vw;
- }
+
+.icon__music {
+ width: 3vw;
 }
 
 .change {
  font-size: 1.2rem;
+}
+
+.change:hover {
+ text-decoration: none;
+ color: hsl(223, 47%, 23%);
 }
 
 .payment {
@@ -111,39 +90,30 @@ p {
  height: 7vh;
  display: grid;
  place-items: center;
+ text-decoration: none;
+ color: #717Fa6;
+ font-weight: bolder;
+}
 
+.cancel__order:hover {
+ color: black;
 }
 
 button {
  background-color: hsl(245, 75%, 52%);
  color: #fff;
  width: 90%;
- height: 90%;
  border-radius: 1rem;
  margin: 0;
  font-size: 1.2rem;
  border: none;
+ display: grid;
+ place-self: center;
 }
 
 button:hover {
  cursor: pointer;
  background-color: hsl(223, 47%, 23%);
-}
-
-.cancel__order>a:hover {
- color: black;
-}
-
-img {
- width: 100%;
- display: block;
- border-radius: 1.5rem 1.5rem 0 0;
-}
-
-.cancel__order a {
- text-decoration: none;
- color: #717Fa6;
- font-weight: bolder;
 }
 
 footer {
@@ -153,10 +123,7 @@ footer {
  font-size: .8rem;
 }
 
-@media(min-width:500px) {
- .container {
-  height: 100vh;
- }
+@media only screen and (min-width: 500px) {
 
  .order {
   height: 80vh;
@@ -164,52 +131,5 @@ footer {
   flex-direction: column;
   width: 25%;
   gap: 1vh;
-
-  &__image {
-   height: 17vh;
-  }
-
-  &__summary {
-   margin-top: 70px;
-  }
-
-  &__summary h1 {
-   font-size: 1.5rem;
-  }
-
-  &__summary__info {
-   font-size: 1rem;
-  }
- }
-
- .annual {
-  padding: 0px 15px;
-
-  &__plan {
-   height: 6vh;
-   width: 40vw;
-  }
-
-  &__plan h2 {
-   font-size: .9rem;
-
-  }
-
-  &__plan__year {
-   font-size: .6rem;
-  }
-
-  &__music__icon img {
-   width: 100%;
-  }
-
-  &__music__icon {
-   height: 7vh;
-   width: 18vw;
-  }
- }
-
- .change {
-  font-size: .8rem;
  }
 }

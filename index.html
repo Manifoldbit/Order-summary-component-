@@ -21,71 +21,34 @@
   <main class="container">
     <!-- The main content -->
     <div class="order">
-      <!--the order with the background of white is holds all the informations -->
-      <div class="order__image">
-        <img src="./images/illustration-hero.svg" alt="">
-        <!--the order image , at the top of the order-->
+
+      <img src="./images/illustration-hero.svg" alt="" class="hero">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like
+      </p>
+
+      <div class="annual">
+        <img src="./images/icon-music.svg" alt="" class="icon__music">
+        <div class="annual__plan">
+          <h2>Annual Plan</h2>
+          <p>$59.99/year</p>
+        </div>
+        <a href="#" class="change">Change</a>
       </div>
-      <div class="summary">
-        <!--the div that holds every written information in the order div-->
-        <div class="order__summary">
-          <!--the div that holds the h1 element-->
-          <h1>Order Summary</h1>
-          <!--the h1 element in the div-->
-        </div>
-
-        <div class="order__summary__info">
-          <!--the div that holds the 'p' element-->
-          <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-            device anywhere you like</p>
-          <!--the 'p' element in the div-->
-        </div>
-
-        <div class="annual">
-          <!--the div that holds all the divs of the annual info.. e.g  annual__music__icon, annual__plan and change-->
-          <div class="annual__music__icon">
-            <!--the div that holds the music icon image-->
-            <img src="./images/icon-music.svg" alt="">
-            <!--the music icon image-->
-          </div>
-          <div class="annual__plan">
-            <!--the div that holds both <h2>Annual Plan</h2 >element and annual__plan__year div -->
-            <h2>Annual Plan</h2>
-            <!--the h2 element inside the annual plan-->
-            <div class="annual__plan__year">
-              <!--the div inside annual__plan div-->
-              <p>$59.99/year</p>
-              <!--the <p> element inside annual__plan_year-->
-            </div>
-          </div>
-          <div class="change">
-            <!--the div tha holds the change link-->
-            <a href="#">Change</a>
-            <!--the clickable "Change" link inside the change div-->
-          </div>
-        </div>
-
-        <div class="payment">
-          <!--the div that holds the payment button-->
-          <button>Proceed to Payment</button>
-          <!--the button inside the payment div-->
-        </div>
-
-        <div class="cancel__order">
-          <!--the div that holds the "Cancel Order" link-->
-          <a href="#">Cancel Order</a>
-          <!--the clickable "Cancel Order" link inside the cancel_order div-->
-        </div>
-      </div>
-
+      <!--end of annual__plan-->
+      <!--end of annual-->
+      <button class="payment"><a href="#">Proceed to Payment</a></button>
+      <a href="#" class="cancel__order">Cancel Order</a>
     </div>
+    <!--end of order-->
 
     <footer>
       <!--the footer-->
       <div class="attribution">
-        <!--the div that holds the links in the the footer-->
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/Manifoldbit/Order-summary-component-">Bit_codes</a>
+        <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/Manifoldbit/Order-summary-component-">Bit_codes</a>
+        </p>
       </div>
 
     </footer>
