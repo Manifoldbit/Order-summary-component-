@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 * body {
-  font-family: "Red Hat Display" sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   height: 100vh;
 }
 
@@ -52,12 +51,10 @@ p {
   gap: 4vw;
   width: 90%;
 }
-
 .annual__plan h2 {
   font-weight: bolder;
   font-size: 1.2rem;
 }
-
 .annual__plan p {
   font-size: 1rem;
   color: #717Fa6;
@@ -128,6 +125,4 @@ footer {
     width: 25%;
     gap: 1vh;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
